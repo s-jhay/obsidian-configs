@@ -15,5 +15,4 @@ tags:
 
 #### Tasks:
 - [ ] <% tp.file.cursor() %>
-
 #### Comments:

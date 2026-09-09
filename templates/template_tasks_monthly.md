@@ -18,16 +18,13 @@ tags:
 #### Comments:
 
 #### Notes created this month
-
 ```dataview
 LIST
 FROM ""
 WHERE dateformat(date(created), "yyyy-MM") = dateformat(date(today), "yyyy-MM")
 SORT created ASC
 ```
-
 #### Notes modified this month
-
 ```dataview
 LIST
 FROM ""

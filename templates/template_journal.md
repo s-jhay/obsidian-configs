@@ -8,13 +8,12 @@ tags:
   - journal
 ---
 
+[[JRNL_<% tp.date.now("YYYY-MM-DD", -1) %>|← Previous day]] · [[JRNL_<% tp.date.now("YYYY-MM-DD", 1) %>|Next day →]]
 #### Status:
 <% tp.file.cursor() %>
-
 #### Tasks:
 - [ ] 
-
-#### Comments:
+#### Log:
 
 #### Notes created today:
 ```dataview
@@ -23,7 +22,6 @@ FROM ""
 WHERE file.cday = date(today)
 SORT file.ctime ASC
 ```
-
 #### Notes modified today:
 ```dataview
 LIST

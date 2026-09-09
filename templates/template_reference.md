@@ -4,6 +4,7 @@ created: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 modified: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 type: "NEW_TYPE"
 title: "{{VALUE:note_title}}"
+publish_date: "YYYY-MM-dd"
 author:
   - "NEW_AUTHOR"
 references:
@@ -15,13 +16,13 @@ tags:
 
 #### Summary:
 <% tp.file.cursor() %>
-
-#### Excerpts:
+#### Notes:
 
 #### Comments:
 
-#### Referenced by:
+#### See also:
 
+#### Referenced by:
 ```dataview
 LIST
 FROM ""
