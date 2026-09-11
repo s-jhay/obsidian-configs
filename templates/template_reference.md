@@ -7,13 +7,11 @@ title: "{{VALUE:note_title}}"
 publish_date: "YYYY-MM-dd"
 author:
   - "NEW_AUTHOR"
-references:
 urls:
 tags:
   - new
   - reference
 ---
-
 #### Summary:
 <% tp.file.cursor() %>
 #### Notes:
@@ -25,7 +23,5 @@ tags:
 #### Referenced by:
 ```dataview
 LIST
-FROM ""
-WHERE contains(references, this.file.link)
-SORT file.name ASC
+FROM [[]]
 ```

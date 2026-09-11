@@ -4,7 +4,6 @@ created: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 modified: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 week_start: <% moment().startOf("isoWeek").format("YYYY-MM-DD") %>
 week_end: <% moment().endOf("isoWeek").format("YYYY-MM-DD") %>
-references:
 urls:
 tags:
   - tasks
