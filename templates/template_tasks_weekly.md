@@ -14,7 +14,17 @@ tags:
 ### Week of <% moment().startOf("isoWeek").format("MMMM D") %>–<% moment().endOf("isoWeek").format("D, YYYY") %>
 
 #### Tasks:
-- [ ] <% tp.file.cursor() %>
+For week:
+
+From week:
+```dataview
+TASK
+FROM ""
+WHERE startswith(file.name, "JRNL_")
+  AND date(regexreplace(file.name, "^JRNL_", "")) >= this.week_start
+  AND date(regexreplace(file.name, "^JRNL_", "")) <= this.week_end
+SORT file.name ASC
+```
 #### Comments:
 #### Notes created this week:
 ```dataview
