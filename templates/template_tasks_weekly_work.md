@@ -16,8 +16,19 @@ tags:
 Monday:
 <% tp.file.cursor() %>
 Tuesday:
+
 Wednesday:
+
 Thursday:
+
 Friday:
 #### Log:
+Monday:
 
+Tuesday:
+
+Wednesday:
+
+Thursday:
+
+Friday:
