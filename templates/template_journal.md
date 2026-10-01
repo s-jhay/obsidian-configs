@@ -18,13 +18,13 @@ tags:
 ```dataview
 LIST
 FROM ""
-WHERE file.cday = date(today)
+WHERE striptime(created) = striptime(this.created)
 SORT file.ctime ASC
 ```
 #### Notes modified today:
 ```dataview
 LIST
 FROM ""
-WHERE file.mday = date(today)
+WHERE striptime(modified) = striptime(this.modified)
 SORT file.ctime ASC
 ```

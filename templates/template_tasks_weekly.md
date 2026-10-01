@@ -15,6 +15,7 @@ tags:
 
 #### Tasks:
 For week:
+#### Comments:
 
 From week:
 ```dataview
@@ -25,7 +26,6 @@ WHERE startswith(file.name, "JRNL_")
   AND date(regexreplace(file.name, "^JRNL_", "")) <= this.week_end
 SORT file.name ASC
 ```
-#### Comments:
 #### Notes created this week:
 ```dataview
 LIST 
